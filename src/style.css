@@ -1,0 +1,55 @@
+#app > h1, h3, a {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    color: navy;
+    background-color: cyan;
+    border-radius: 20%;
+}
+
+body {
+    background-color: DodgerBlue;
+    font-style: arial;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#postAddDetails {
+    display: grid;
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 30px 100px 30px;
+    gap: 1px 1px;
+}
+
+#postAddDetails > button {
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1 / 3;
+}
+
+#profile {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    gap: 5px 5px;
+}
+
+#profilePosts, #profileMessages {
+    border: 1px solid navy;
+    border-radius: 15%;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-rows: auto;
+    justify-items: center;
+    justify-content: center;
+    align-items: start;
+    align-content: start;
+    gap: 5px 2px;
+}
+
+button, a {
+    margin: 5px;
+}
